@@ -1,0 +1,12 @@
+{
+  "name": "ehuub-epubscript",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "zip -X0 YourTitleHere_$npm_package_version.epub mimetype; zip -Xur9D YourTitleHere_$npm_package_version.epub META-INF EPUB -x *.DS_Store && npm version patch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

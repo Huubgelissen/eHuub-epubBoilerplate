@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<package xmlns="http://www.idpf.org/2007/opf" version="3.0" xml:lang="en"  unique-identifier="pub-id">
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+
+    <dc:title id="title">Your Title Here</dc:title>
+        <meta refines="#title" property="title-type">main</meta>
+
+    <dc:creator id="creator">Your Name Here</dc:creator>
+        <meta refines="#creator" property="file-as">Lastname, Firstname</meta>
+        <meta refines="#creator" property="role" scheme="marc:relators">aut</meta>
+
+    <dc:identifier id="pub-id">isbn-000-0-000-00000-0</dc:identifier>
+        <meta property="dcterms:modified">2011-01-01T12:00:00Z</meta>
+
+    <dc:language>en-US</dc:language>
+    <dc:publisher>Publisher Name</dc:publisher>
+    <dc:rights>All Rights Reserved.</dc:rights> 
+    <dc:date>2018-09-15</dc:date>
+  </metadata>
+
+
+<manifest>
+<!--content pages-->
+    <item id="toc" properties="nav" href="Text/toc.xhtml" media-type="application/xhtml+xml"/>
+    <item id="cover" href="Text/cover.xhtml" media-type="application/xhtml+xml"/>
+    <item id="titlepage" href="Text/titlepage.xhtml" media-type="application/xhtml+xml"/>
+    <item id="copyright" href="Text/copyright.xhtml" media-type="application/xhtml+xml"/>
+    <item id="halftitlepage" href="Text/halftitlepage.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter1" href="Text/chapter1.xhtml" media-type="application/xhtml+xml"/>
+    <item id="epilogue" href="Text/epilogue.xhtml" media-type="application/xhtml+xml"/>
+    <item id="colophon" href="Text/colophon.xhtml" media-type="application/xhtml+xml"/>
+
+<!--images-->
+    <item id="coverimage" properties= "cover-image" href="Images/cover.jpg" media-type="image/jpeg"/>
+    <item id="publisherimage" href="Images/publisherimage.jpg" media-type="image/jpeg"/>
+
+<!--stylesheet-->
+    <item id="style" href="Styles/style.css" media-type="text/css"/>
+
+<!--epub2 toc-->
+    <item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml"/>
+</manifest>
+
+<spine toc="ncx">
+    <itemref idref="cover" linear="yes"/>
+    <itemref idref="titlepage" linear="yes"/>
+    <itemref idref="copyright" linear="yes"/>
+    <itemref idref="toc" linear="yes"/>
+    <itemref idref="halftitlepage" linear="yes"/>
+    <itemref idref="chapter1" linear="yes"/>
+    <itemref idref="epilogue" linear="yes"/>
+    <itemref idref="colophon" linear="yes"/>
+</spine>
+  
+</package>

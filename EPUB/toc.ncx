@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="en">
+	<head>
+		<meta content="isbn-000-0-000-00000-0" name="dtb:pub-id"/>
+		<meta content="2" name="dtb:depth"/>
+		<meta content="0" name="dtb:totalPageCount"/>
+		<meta content="0" name="dtb:maxPageNumber"/>
+	</head>
+	<docTitle>
+		<text>Your Title Here</text>
+	</docTitle>
+	<navMap>
+	
+		<navPoint class="chapter" id="title" playOrder="1">
+			<navLabel>
+				<text>Title Page</text>
+			</navLabel>
+			<content src="Text/titlepage.xhtml"/>
+		</navPoint>
+
+		<navPoint class="chapter" id="copyright" playOrder="2">
+			<navLabel>
+				<text>Copyright Page</text>
+			</navLabel>
+			<content src="Text/copyright.xhtml"/>
+		</navPoint>
+
+		<navPoint class="chapter" id="toc" playOrder="3">
+			<navLabel>
+				<text>Table of Contents</text>
+			</navLabel>
+			<content src="Text/toc.xhtml"/>
+		</navPoint>
+		
+		<navPoint class="chapter" id="halftitlepage" playOrder="4">
+			<navLabel>
+				<text>Half Title Page</text>
+			</navLabel>
+			<content src="Text/halftitlepage.xhtml"/>
+		</navPoint>
+
+		<navPoint class="chapter" id="chapter1" playOrder="5">
+			<navLabel>
+				<text>Chapter 1</text>
+			</navLabel>
+			<content src="Text/chapter1.xhtml"/>
+		</navPoint>
+
+		<navPoint class="chapter" id="epilogue" playOrder="6">
+			<navLabel>
+				<text>Epilogue</text>
+			</navLabel>
+			<content src="Text/epilogue.xhtml"/>
+		</navPoint>
+
+		<navPoint class="chapter" id="colophon" playOrder="7">
+			<navLabel>
+				<text>Colophon</text>
+			</navLabel>
+			<content src="Text/colophon.xhtml"/>
+		</navPoint>
+
+		</navMap>
+
+</ncx>

@@ -1,0 +1,128 @@
+body {
+  line-height: 1.5em;
+  -webkit-hyphenate-limit-before: 3;
+  -webkit-hyphenate-limit-after: 2;
+  -ms-hyphenate-limit-chars: 6 3 2;
+  hyphenate-limit-chars: 6 3 2;
+  -webkit-hyphenate-limit-lines: 2;
+  hyphenate-limit-lines: 2;
+}
+
+p {
+  text-indent: 1.25em;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+p.copyright-edition-first {
+  text-align: left;
+  line-height: 1.2em;
+  margin-top: 1em;
+}
+
+p.copyright-edition {
+  text-align: left;
+  line-height: 1.2em;
+}
+
+p.copyright-date {
+  text-align: left;
+  line-height: 1.2em;
+  margin-bottom: 3em;
+}
+
+p.copyright-message {
+  font-size: 0.8em;
+  margin-top: 9em;
+  text-align: center;
+}
+
+p.chapter-title {
+  text-align: center;
+  font-size: 1.5em;
+  margin-top: 10%;
+}
+
+p.new-chapter {
+  text-indent: 0;
+  margin-top: 3em;
+}
+
+p.new-paragraph {
+  text-indent: 0;
+  margin-top: 1em;
+}
+
+p.titlepage-byline {
+  text-align: center;
+  text-indent: 0;
+}
+
+p.titlepage-title {
+  text-align: center;
+  text-indent: 0;
+  font-size: 2em;
+  letter-spacing: -2px;
+  margin-top: 10%;
+  line-height: 1.2em;
+}
+
+p.url {
+  font-size: 1.2em;
+  text-align: center;
+  margin-top: 1.5em;
+}
+
+.wrapper-cover {
+  text-align: center;
+}
+
+.wrapper-publisherimage {
+  width: 100%;
+  text-align: center;
+  page-break-inside: avoid;
+  margin-top: 5em;
+}
+
+span.italic {
+  font-style: italic;
+  text-transform: none;
+}
+
+span.bold {
+  font-weight: bold;
+  text-transform: none;
+}
+
+span.superscript {
+  font-size: 0.675em;
+  line-height: 1.2;
+  vertical-align: super;
+  vertical-align: 35%;
+}
+
+span.small-caps {
+  font-variant: small-caps;
+  text-transform: none;
+}
+
+@supports not (font-variant-caps: small-caps) {
+  element {
+    font-variant: normal;
+    font-feature-settings: "smcp", "onum", "pnum";
+  }
+}
+
+@supports (font-variant-caps: small-caps) {
+  element {
+    font-variant: normal;
+    font-variant-caps: small-caps;
+  }
+}
+
+/* Kindle Legacy Specific Styles */
+@media amzn-mobi {
+  p.first {
+    text-indent: 0;
+  }
+}
