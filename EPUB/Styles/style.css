@@ -1,11 +1,100 @@
 body {
-  line-height: 1.5em;
+  line-height: 1.5;
+  font-kerning: normal;
+  font-variant: common-ligatures oldstyle-nums proportional-nums;
+  font-feature-settings: "kern", "liga", "clig", "onum", "pnum";
+}
+
+body * {
+  line-height: inherit;
   -webkit-hyphenate-limit-before: 3;
   -webkit-hyphenate-limit-after: 2;
   -ms-hyphenate-limit-chars: 6 3 2;
   hyphenate-limit-chars: 6 3 2;
   -webkit-hyphenate-limit-lines: 2;
   hyphenate-limit-lines: 2;
+}
+
+article,
+aside,
+figure,
+figcaption,
+footer,
+header,
+main,
+nav,
+section {
+  display: block;
+}
+
+sub {
+  font-size: 0.675em;
+  line-height: 1.2;
+  vertical-align: sub;
+  vertical-align: -20%;
+}
+
+sup {
+  font-size: 0.675em;
+  line-height: 1.2;
+  vertical-align: super;
+  vertical-align: 35%;
+}
+
+h1,
+h2,
+h3 {
+  font-variant: common-ligatures lining-nums proportional-nums;
+  font-feature-settings: "kern", "liga", "clig", "lnum", "pnum";
+}
+
+table {
+  font-variant-numeric: lining-nums tabular-nums;
+  font-feature-settings: "kern", "lnum", "tnum";
+}
+
+code {
+  font-variant: no-common-ligatures lining-nums;
+  font-feature-settings: "kern" 0, "liga" 0, "clig" 0, "lnum";
+}
+
+.fraction {
+  font-variant-numeric: diagonal-fractions;
+  font-feature-settings: "frac";
+}
+
+table {
+  table-layout: fixed;
+}
+
+th.third {
+  width: 33%;
+}
+
+img {
+  object-fit: contain;
+}
+
+figure {
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+@supports not ((page-break-inside: avoid) and (break-inside: avoid)) {
+  figure {
+    -webkit-column-break-inside: avoid;
+  }
+}
+
+@supports (height: calc(98vh - 5em)) {
+  img {
+    width: auto;
+    max-width: 100%;
+    min-height: 300px;
+    height: calc(98vh - 5em);
+    max-height: 95%;
+    object-fit: contain;
+  }
 }
 
 p {
@@ -75,13 +164,34 @@ p.url {
 
 .wrapper-cover {
   text-align: center;
+  height: 100%;
+}
+
+@supports (display: -webkit-flex) or (display: flex) {
+  .wrapper-cover {
+    min-height: 95vh;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+}
+
+.cover-image {
+  width: 100%;
+  vertical-align: middle;
 }
 
 .wrapper-publisherimage {
   width: 100%;
   text-align: center;
   page-break-inside: avoid;
+<<<<<<< HEAD
   margin-top: 5em;
+=======
+>>>>>>> Add normalizer
 }
 
 span.italic {
@@ -107,14 +217,14 @@ span.small-caps {
 }
 
 @supports not (font-variant-caps: small-caps) {
-  element {
+  span.small-caps {
     font-variant: normal;
     font-feature-settings: "smcp", "onum", "pnum";
   }
 }
 
 @supports (font-variant-caps: small-caps) {
-  element {
+  span.small-caps {
     font-variant: normal;
     font-variant-caps: small-caps;
   }
@@ -124,5 +234,15 @@ span.small-caps {
 @media amzn-mobi {
   p.first {
     text-indent: 0;
+  }
+}
+
+@supports (display: -webkit-flex) or (display: flex) {
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    height: 100vh;
   }
 }
