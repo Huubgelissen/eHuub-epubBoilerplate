@@ -1,10 +1,10 @@
 {
   "name": "ehuub-epubscript",
-  "version": "1.0.5",
+  "version": "1.0.11",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "zip -X0 giel.epub mimetype; zip -Xur9D giel.epub META-INF EPUB -x *.DS_Store && npm version patch"
+    "build": "zip -X0 TheAssault_$npm_package_version.epub mimetype; zip -Xur9D TheAssault_$npm_package_version.epub META-INF EPUB -x *.DS_Store && npm version patch"
   },
   "keywords": [],
   "author": "",
