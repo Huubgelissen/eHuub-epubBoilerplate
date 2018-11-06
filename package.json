@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "rm -rf ./baas.epub && zip -X0 baas.epub mimetype && zip -Xur9D baas.epub META-INF EPUB -x *.DS_Store"
+    "build": "rm -rf ./baas.epub && zip -X0 baas.epub mimetype && zip -Xur9D baas.epub META-INF EPUB -x *.DS_Store && open ./baas.epub"
   },
   "keywords": [],
   "author": "",

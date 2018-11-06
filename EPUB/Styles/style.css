@@ -73,11 +73,17 @@ th.third {
 
 img {
   object-fit: contain;
+  vertical-align: middle;
 }
 
 figure {
   page-break-inside: avoid;
   break-inside: avoid;
+}
+
+nav[epub\:type~="landmarks"], #landmarks {
+  display: none;
+  visibility: hidden;
 }
 
 @supports not ((page-break-inside: avoid) and (break-inside: avoid)) {
@@ -91,8 +97,6 @@ figure {
     width: auto;
     max-width: 100%;
     min-height: 300px;
-    height: calc(98vh - 5em);
-    max-height: 95%;
     object-fit: contain;
   }
 }
@@ -103,27 +107,21 @@ p {
   padding: 0;
 }
 
-.copyright-edition-first {
-  text-align: left;
+.copyright-editions p {
   line-height: 1.2em;
+  text-align: center;
+}
+
+.copyright-edition-first { 
   margin-top: 1em;
 }
 
-.copyright-edition {
-  text-align: left;
-  line-height: 1.2em;
-}
-
 .copyright-date {
-  text-align: left;
-  line-height: 1.2em;
   margin-bottom: 3em;
 }
 
 .copyright-message {
   font-size: 0.8em;
-  margin-top: 9em;
-  text-align: center;
 }
 
 .chapter-title {
@@ -142,9 +140,16 @@ p {
   margin-top: 1em;
 }
 
-.titlepage-byline {
+.copyright,
+.titlepage {
+  position: relative;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  height: 100vh;
   text-align: center;
-  text-indent: 0;
 }
 
 .titlepage-title {
@@ -154,6 +159,18 @@ p {
   letter-spacing: -2px;
   margin-top: 10%;
   line-height: 1.2em;
+}
+
+.titlepage-byline {
+  text-align: center;
+  text-indent: 0;
+}
+
+.wrapper-publisherimage {
+  display: inline-block;
+  width: 30%;
+  margin: 0 auto;
+  page-break-inside: avoid;
 }
 
 .url {
@@ -182,12 +199,6 @@ p {
 .cover-image {
   width: 100%;
   vertical-align: middle;
-}
-
-.wrapper-publisherimage {
-  width: 100%;
-  text-align: center;
-  page-break-inside: avoid;
 }
 
 .italic {
