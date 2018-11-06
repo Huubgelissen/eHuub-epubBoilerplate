@@ -99,55 +99,55 @@ figure {
 
 p {
   text-indent: 1.25em;
-  margin: 0 auto;
-  padding: 0 auto;
+  margin: 0;
+  padding: 0;
 }
 
-p.copyright-edition-first {
+.copyright-edition-first {
   text-align: left;
   line-height: 1.2em;
   margin-top: 1em;
 }
 
-p.copyright-edition {
+.copyright-edition {
   text-align: left;
   line-height: 1.2em;
 }
 
-p.copyright-date {
+.copyright-date {
   text-align: left;
   line-height: 1.2em;
   margin-bottom: 3em;
 }
 
-p.copyright-message {
+.copyright-message {
   font-size: 0.8em;
   margin-top: 9em;
   text-align: center;
 }
 
-p.chapter-title {
+.chapter-title {
   text-align: center;
   font-size: 1.5em;
   margin-top: 10%;
 }
 
-p.new-chapter {
+.new-chapter {
   text-indent: 0;
   margin-top: 3em;
 }
 
-p.new-paragraph {
+.new-paragraph {
   text-indent: 0;
   margin-top: 1em;
 }
 
-p.titlepage-byline {
+.titlepage-byline {
   text-align: center;
   text-indent: 0;
 }
 
-p.titlepage-title {
+.titlepage-title {
   text-align: center;
   text-indent: 0;
   font-size: 2em;
@@ -156,7 +156,7 @@ p.titlepage-title {
   line-height: 1.2em;
 }
 
-p.url {
+.url {
   font-size: 1.2em;
   text-align: center;
   margin-top: 1.5em;
@@ -190,50 +190,37 @@ p.url {
   page-break-inside: avoid;
 }
 
-span.italic {
+.italic {
   font-style: italic;
   text-transform: none;
 }
 
-span.bold {
+.bold {
   font-weight: bold;
   text-transform: none;
 }
 
-span.superscript {
+.superscript {
   font-size: 0.675em;
   line-height: 1.2;
   vertical-align: super;
   vertical-align: 35%;
 }
 
-span.small-caps {
+.small-caps {
   font-variant: small-caps;
   text-transform: none;
 }
 
-@supports not (font-variant-caps: small-caps) {
-  span.small-caps {
-    font-variant: normal;
-    font-feature-settings: "smcp", "onum", "pnum";
-  }
-}
-
-@supports (font-variant-caps: small-caps) {
-  span.small-caps {
-    font-variant: normal;
-    font-variant-caps: small-caps;
-  }
-}
-
 /* Kindle Legacy Specific Styles */
 @media amzn-mobi {
-  p.first {
+  .first {
     text-indent: 0;
   }
 }
 
-@supports (display: -webkit-flex) or (display: flex) {
+/* @supports (display: -webkit-flex) or (display: flex) {
+  .span {
     display: flex;
     -webkit-flex-direction: column;
     flex-direction: column;
@@ -241,4 +228,4 @@ span.small-caps {
     justify-content: space-between;
     height: 100vh;
   }
-}
+} */
