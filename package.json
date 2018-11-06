@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "zip -X0 TheAssault_$npm_package_version.epub mimetype; zip -Xur9D TheAssault_$npm_package_version.epub META-INF EPUB -x *.DS_Store && npm version patch"
+    "build": "rm -rf ./baas.epub && zip -X0 baas.epub mimetype && zip -Xur9D baas.epub META-INF EPUB -x *.DS_Store"
   },
   "keywords": [],
   "author": "",

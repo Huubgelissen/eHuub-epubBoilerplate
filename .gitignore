@@ -1,3 +1,4 @@
 *.zip
 *.cpgz
 *.epub
+node_modules
