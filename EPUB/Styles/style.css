@@ -169,24 +169,22 @@ p {
 }
 
 .titlepage-title {
-  text-align: center;
   text-indent: 0;
   font-size: 2em;
-  letter-spacing: -2px;
+  letter-spacing: -0.022em;
   margin-top: 10%;
   line-height: 1.2em;
 }
 
 .titlepage-byline {
-  text-align: center;
   text-indent: 0;
 }
 
-.wrapper-publisherimage {
-  display: inline-block;
+.titlepage-publisherimage {
   width: 30%;
-  margin: 0 auto;
   page-break-inside: avoid;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .url {
