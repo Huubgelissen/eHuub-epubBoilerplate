@@ -48,9 +48,8 @@ h3 {
   font-feature-settings: "kern", "liga", "clig", "lnum", "pnum";
 }
 
-h1 {
+h3 {
   text-align: center;
-  font-size: 1.5em;
   margin-top: 10%;
 }
 
@@ -138,7 +137,6 @@ p {
 .toc-list {
   margin-top: 3em;
   margin-bottom: 0;
-  padding: 0;
   list-style: none;
 }
 
