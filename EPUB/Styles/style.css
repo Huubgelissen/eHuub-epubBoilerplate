@@ -51,6 +51,7 @@ h3 {
 h3 {
   text-align: center;
   margin-top: 10%;
+  text-indent: 0;
 }
 
 table {
@@ -124,6 +125,7 @@ p {
 .copyright-editions p {
   line-height: 1.2em;
   text-align: center;
+  text-indent: 0;
 }
 
 .copyright-list-item {
@@ -132,6 +134,7 @@ p {
 
 .copyright-message {
   font-size: 0.8em;
+  text-indent: 0;
 }
 
 .toc-list {
@@ -144,6 +147,7 @@ p {
   text-align: center;
   font-size: 1.5em;
   margin-top: 10%;
+  text-indent: 0;
 }
 
 .new-chapter {
@@ -186,6 +190,7 @@ p {
   page-break-inside: avoid;
   margin-left: auto;
   margin-right: auto;
+  text-indent: 0;
 }
 
 .url {
@@ -196,7 +201,9 @@ p {
 
 .cover-image {
   margin: 0;
+  padding: 0;
   text-align: center;
+  text-indent: 0;
   height: 98%;
 }
 
