@@ -197,8 +197,9 @@ p {
 }
 
 .cover-image {
-  width: 100%;
-  vertical-align: middle;
+  margin: 0;
+  text-align: center;
+  height: 98%;
 }
 
 .italic {
