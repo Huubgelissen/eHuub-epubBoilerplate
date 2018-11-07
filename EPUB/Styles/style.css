@@ -48,6 +48,12 @@ h3 {
   font-feature-settings: "kern", "liga", "clig", "lnum", "pnum";
 }
 
+h1 {
+  text-align: center;
+  font-size: 1.5em;
+  margin-top: 10%;
+}
+
 table {
   font-variant-numeric: lining-nums tabular-nums;
   font-feature-settings: "kern", "lnum", "tnum";
@@ -126,6 +132,13 @@ p {
 
 .copyright-message {
   font-size: 0.8em;
+}
+
+.toc-list {
+  margin-top: 3em;
+  margin-bottom: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .chapter-title {
