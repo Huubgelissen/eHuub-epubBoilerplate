@@ -10,40 +10,40 @@
 		<text>Your Title Here</text>
 	</docTitle>
 	<navMap>
+
+		<navPoint class="cover" id="cover" playOrder="1">
+			<navLabel>
+				<text>Cover</text>
+			</navLabel>
+			<content src="Text/cover.xhtml"/>
+		</navPoint>
 	
-		<navPoint class="chapter" id="title" playOrder="1">
+		<navPoint class="chapter" id="title" playOrder="2">
 			<navLabel>
 				<text>Title Page</text>
 			</navLabel>
 			<content src="Text/titlepage.xhtml"/>
 		</navPoint>
 
-		<navPoint class="chapter" id="copyright" playOrder="2">
+		<navPoint class="chapter" id="copyright" playOrder="3">
 			<navLabel>
 				<text>Copyright Page</text>
 			</navLabel>
 			<content src="Text/copyright.xhtml"/>
 		</navPoint>
 
-		<navPoint class="chapter" id="toc" playOrder="3">
+		<navPoint class="chapter" id="toc" playOrder="4">
 			<navLabel>
 				<text>Table of Contents</text>
 			</navLabel>
 			<content src="Text/toc.xhtml"/>
 		</navPoint>
 		
-		<navPoint class="chapter" id="halftitlepage" playOrder="4">
+		<navPoint class="chapter" id="halftitlepage" playOrder="5">
 			<navLabel>
 				<text>Half Title Page</text>
 			</navLabel>
 			<content src="Text/halftitlepage.xhtml"/>
-		</navPoint>
-
-		<navPoint class="chapter" id="chapter1" playOrder="5">
-			<navLabel>
-				<text>Chapter 1</text>
-			</navLabel>
-			<content src="Text/chapter1.xhtml"/>
 		</navPoint>
 
 		<navPoint class="chapter" id="epilogue" playOrder="6">
