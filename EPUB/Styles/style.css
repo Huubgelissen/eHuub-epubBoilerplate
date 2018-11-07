@@ -81,7 +81,8 @@ figure {
   break-inside: avoid;
 }
 
-nav[epub\:type~="landmarks"], #landmarks {
+nav[epub\:type~="landmarks"],
+#landmarks {
   display: none;
   visibility: hidden;
 }
@@ -107,16 +108,19 @@ p {
   padding: 0;
 }
 
+.copyright-editions {
+  margin-top: 2.5em;
+  margin-bottom: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .copyright-editions p {
   line-height: 1.2em;
   text-align: center;
 }
 
-.copyright-edition-first { 
-  margin-top: 1em;
-}
-
-.copyright-date {
+.copyright-list-item {
   margin-bottom: 3em;
 }
 
