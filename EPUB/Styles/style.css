@@ -110,7 +110,8 @@ nav[epub\:type~="landmarks"],
 
 p {
   text-indent: 1.25em;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
   padding: 0;
 }
 
